@@ -1,0 +1,16 @@
+# XIPRNET Codeowners
+# All changes must be reviewed by @krdashev
+
+* @krdashev
+
+# Core cryptography
+/core/ @krdashev
+
+# Server infrastructure
+/server/ @krdashev
+
+# Documentation
+/docs/ @krdashev
+
+# CI/CD workflows
+/.github/workflows/ @krdashev
