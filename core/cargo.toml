@@ -1,0 +1,48 @@
+[package]
+name = "xipr-core"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "Core cryptography and protocol implementation for XIPRNET"
+
+[dependencies]
+# Use workspace dependencies where possible
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+uuid.workspace = true
+chrono.workspace = true
+
+# Crypto dependencies (simplified for now)
+aes-gcm = "0.10"
+chacha20poly1305 = "0.10"
+x25519-dalek = "2.0"
+ed25519-dalek = "2.0"
+sha2 = "0.10"
+hmac = "0.12"
+hkdf = "0.12"
+
+# Serialization
+bincode = "2.0.1"
+
+# Async runtime
+async-trait = "0.1"
+
+# Error handling
+anyhow = "1.0"
+
+# Logging
+tracing-subscriber = { version = "0.3", default-features = false, features = ["fmt"] }
+
+# Utilities
+base64 = "0.22.1"
+hex = "0.4"
+
+# Memory security
+zeroize = "1.7"
+
+[dev-dependencies]
+tokio-test = "0.4"
+criterion = "0.7"

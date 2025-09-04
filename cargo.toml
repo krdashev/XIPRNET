@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "core",
+    "server"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["XIPRNET Team"]
+license = "MIT OR Apache-2.0"
+
+[workspace.dependencies]
+# Common dependencies that can be shared
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+tracing = "0.1"
+thiserror = "2.0.16"
+uuid = { version = "1.0", features = ["v4"] }
+chrono = { version = "0.4", features = ["serde"] }

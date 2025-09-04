@@ -13,7 +13,7 @@ XIPRNET (eXtended Internet Protocol Router Network) — a defense-grade, open ar
 
 ## Architecture
 /core/ # Rust crypto + protocol (MLS, HPKE, storage, zeroize)
-/clients/ # iOS, Android, Desktop thin shells
+/clients/ # desktop
 /server/ # gateway, delivery queues, media store, key directory
 /transparency/ # Merkle log + auditors
 /infra/ # IaC, CI/CD, sigstore, SBOM
